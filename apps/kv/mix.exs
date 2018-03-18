@@ -19,6 +19,7 @@ defmodule KV.Mixfile do
   def application do
     [
       extra_applications: [:logger],
+      env: [routing_table: []],
       mod: {KV, []} # setting application callback module
     ]
   end

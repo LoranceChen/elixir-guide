@@ -28,3 +28,10 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
+
+# Replace computer-name with your local machine nodes.
+config :kv, :routing_table,
+       [{?a..?m, :"foo@mac-1186"},
+        {?n..?z, :"bar@mac-1186"}]
+
+# config :iex, default_prompt: ">>>"
