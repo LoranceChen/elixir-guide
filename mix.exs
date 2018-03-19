@@ -9,12 +9,21 @@ defmodule KvUmbrella.MixProject do
     ]
   end
 
+  def application, do: [
+    applications: [
+      # Add edeliver to the END of the list
+    ]
+  ]
+
+  
   # Dependencies listed here are available only for this
   # project and cannot be accessed from applications inside
   # the apps folder.
   #
   # Run "mix help deps" for examples and options.
   defp deps do
-    []
+    [
+      {:distillery, "~> 1.5", runtime: false}
+    ]
   end
 end

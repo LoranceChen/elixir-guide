@@ -46,7 +46,7 @@ defmodule KVServer.Command do
 
   def run({:create, bucket}) do
     KV.Registry.create(KV.Registry, bucket)
-    {:ok, "OK\r\n"}
+    {:ok, "OK222\r\n"}
   end
 
   def run({:get, bucket, key}) do
